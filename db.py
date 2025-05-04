@@ -4,7 +4,7 @@ import os
 
 def get_db_connection():
     try:
-        conn = mysql.connector.connect(
+        conn = psycopg2.connect(
             host=os.getenv("HOST"),
             user=os.getenv("USER"),
             password=os.getenv("PASSWORD"),
