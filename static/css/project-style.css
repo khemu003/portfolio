@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #1e1e2f;
+    padding: 1rem 2rem;
+    text-align: left;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #00bcd4;
+}
+
+.project-main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.project-hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-hero img {
+    width: 100%;
+    max-width: 750px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.project-intro h1 {
+    font-size: 2rem;
+    color: #1e1e2f;
+}
+
+.project-intro p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+.project-details h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #1e1e2f;
+}
+
+.project-details p,
+.project-details ul {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #444;
+}
+
+.tools {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tools li {
+    background: #00bcd4;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #1e1e2f;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00bcd4;
+}
+
+.btn.live {
+    background-color: #00bcd4;
+}
+
+.btn.live:hover {
+    background-color: #0097a7;
+}
+
+.project-footer {
+    background: #1e1e2f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}

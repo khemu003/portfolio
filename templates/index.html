@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Portfolio</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-image">
+                    <img src="static/images/profile.png" alt="Khemraj Mangal" />
+                </div>
+                <div class="hero-content">
+                    <p class="intro">I'm</p>
+                    <h1 class="name">Khemraj Mangal</h1>
+                    <p class="tagline">Aspiring Data Scientist passionate about machine learning and analytics.</p>
+                    <a href="#projects" class="hero-btn">MY PROJECTS</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-container">
+                <div class="project-item zoom-in">
+                    <img src="static/images/Housing Price Prediction.png" alt="Project 1">
+                    <h3>Housing Price Prediction</h3>
+                    <p>
+                        Developed an end-to-end House Price Prediction web app using Python, Streamlit, and
+                        Scikit-learn, delivering real-time predictions with 90%+ user satisfaction.
+                    </p>
+                    <a href="{{ url_for('project1') }}">View Project</a>
+                </div>
+                <div class="project-item zoom-in">
+                    <img src="static/images/Personal Finace Tracker.png" alt="Project 2">
+                    <h3>Personal Finance Tracker</h3>
+                    <p>
+                        Developed a web application for personal finance management using Flask, MySQL, and Python,
+                        enabling users to track income and expenses effectively.
+                    </p>
+                    <a href="{{ url_for('project2') }}">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="zigzag-timeline">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+
+                <div class="timeline-container left">
+                    <div class="content">
+                        <h3>Data Science Intern</h3>
+                        <h4>Regex Software Services</h4>
+                        <p>Sep 2024 – Present</p>
+                        <p>
+                            Working on data scraping, analysis, dashboarding, and machine learning model development for
+                            client solutions.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills-list fade-in">
+                <li>Python</li>
+                <li>NumPy</li>
+                <li>Pandas</li>
+                <li>SQL</li>
+                <li>Matplotlib</li>
+                <li>Seaborn</li>
+                <li>Plotly</li>
+                <li>Scikit-learn</li>
+                <li>Machine learning</li>
+                <li>Tableau</li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p class="fade-in-delay">
+                I'm a BCA student specializing in Data Science with skills in Python, SQL, and data
+                visualization. I enjoy solving real-world problems through data-driven approaches and aspire to become a
+                full-time data scientist.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <form id="contact-form" method="post">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Connect with me:</p>
+        <a href="https://github.com/khemu003" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/khemraj-mangal/" target="_blank">LinkedIn</a>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
