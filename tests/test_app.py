@@ -1,4 +1,4 @@
-import app
+from app import app
 
 def test_homepage():
     tester = app.test_client()
