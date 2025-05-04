@@ -1,10 +1,9 @@
 import mysql.connector
-import psycopg2
 import os
 
 def get_db_connection():
     try:
-        conn = psycopg2.connect(
+        conn = mysql.connector.connect(
             host=os.getenv("HOST"),
             user=os.getenv("USER"),
             password=os.getenv("PASSWORD"),
