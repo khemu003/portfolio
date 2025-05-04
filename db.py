@@ -1,4 +1,5 @@
 import mysql.connector
+import psycopg2
 import os
 
 def get_db_connection():
